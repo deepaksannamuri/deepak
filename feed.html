@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Online library management system
+</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="utf-8">
+<meta name="viewPort" content="width=device-width, intial-scale=1">
+
+
+ <link rel="stylesheet" href="fontawesome-free-5.11.2-web\css\all.css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<style type="text/css">
+section
+{
+	margin-top:-20px;
+}
+
+</style>
+	</head>
+	<body>
+		
+<nav class="navbar navbar-inverse"> 
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-book-reader fa-9x" style="color:red;"></i>
+	
+	<div class="container-fluid">
+	
+	<div class="navbar-header">
+	
+	<a class="navbar-brand">Online Library Management System</a>
+	</div>
+
+
+<ul class="nav navbar-nav navbar-right">
+	<li><a href="home.html"><span class="glyphicon glyphicon-home"> HOME</span></a></li>
+	
+<li><a href="page.html"><span class="glyphicon glyphicon-search">BOOK SEARCH</a></span></li>
+<li><a href="feed.html"><span class="glyphicon glyphicon-thumbs-up">FEEDBACK</span><span class="glyphicon glyphicon-thumbs-down"></span></a></li>
+<li><a href="logout.html"><span class="glyphicon glyphicon-log-out"> LOGOUT</span></a>
+</ul>
+</div>
+</nav>
+</header>
+<section>
+	<style type="text/css" class="sec_img">
+.carousel { z-index: -99; } /* keeps this behind all content */
+.carousel .item {
+position: fixed; 
+ opacity: 0;
+ left:0 !important;
+width: 100%; height: 100%;
+-webkit-transition: opacity 0.5s;
+-moz-transition: opacity 0.5s;
+-ms-transition: opacity 0.5s;
+-o-transition: opacity 0.5s;
+transition: opacity 0.5s;
+}
+.carousel .one {
+background: url(library1.jpg);
+background-size: 100%;
+-moz-background-size: 100%;
+}
+.carousel .two {
+background: url(l18.jpg);
+background-size: 100%;
+-moz-background-size: 100%;
+}
+.carousel .three {
+background: url(reg12.png);
+background-size: 100%;
+-moz-background-size: 100%;
+}
+.carousel .four {
+background: url(lib.jpg);
+background-size: 100%;
+-moz-background-size: 100%;
+}
+.carousel .five {
+background: url(115.jpg);
+background-size: 100%;
+-moz-background-size: 100%;
+}
+.carousel .active {
+opacity: 1 !important;
+}
+
+.carousel .left {
+opacity: 1 !important;
+-webkit-transition: opacity 0.5s  !important;
+-moz-transition: opacity 0.5s  !important;
+-ms-transition: opacity 0.5s  !important;
+-o-transition: opacity 0.5s  !important;
+transition: opacity 0.5s  !important;
+}
+
+	</style>
+	<script type="text/javascript">
+  $(document).ready(function() {
+    $('.carousel').carousel({interval: 7000});
+  });
+</script>
+	<div id="myCarousel" class="carousel container slide">
+<div class="carousel-inner">
+        <div class="active item one"></div>
+        <div class="item two"></div>
+        <div class="item three"></div>
+        <div class="item four"></div>
+        <div class="item five"></div>
+</div>
+</div>
+<style type="text/css">
+body {
+	background: #ebefff;
+}
+
+.wrap {
+	width: 250px;
+	height: 50px;
+	background: black;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,350%);
+	border-radius: 10px;
+}
+.stars {
+	width: fit-content;
+	margin: 0 auto;
+	cursor: pointer;
+}
+.star {
+	color: yellow !important;
+}
+.rate {
+	height: 50px;
+	margin-left: -5px;
+	padding: 5px;
+	font-size: 30px;
+	position: relative;
+	cursor: pointer;
+}
+.rate input[type="radio"] {
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,0%);
+	pointer-events: none;
+}
+.star-over::after {
+	font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+	font-size: 16px;
+	content: "\f005";
+	display: inline-block;
+	color: red;
+	z-index: 1;
+	position: absolute;
+	top: 17px;
+	left: 10px;
+}
+
+.rate:nth-child(1) .face::after {
+	content: "\f119"; /* ☹ */
+}
+.rate:nth-child(2) .face::after {
+	content: "\f11a"; /* 😐 */
+}
+.rate:nth-child(3) .face::after {
+	content: "\f118"; /* 🙂 */
+}
+.rate:nth-child(4) .face::after {
+	content: "\f580"; /* 😊 */
+}
+.rate:nth-child(5) .face::after {
+	content: "\f59a"; /* 😄 */
+}
+.face {
+	opacity: 0;
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	background: #91a6ff;
+	border-radius: 5px;
+	top: -50px;
+	left: 2px;
+	transition: 0.2s;
+	pointer-events: none;
+}
+.face::before {
+	font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+	content: "\f0dd";
+	display: inline-block;
+	color: #91a6ff;
+	z-index: 1;
+	position: absolute;
+	left: 9px;
+	bottom: -15px;
+}
+.face::after {
+	font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+	display: inline-block;
+	color: yellow;
+	z-index: 1;
+	position: absolute;
+	left: 5px;
+	top: -1px;
+}
+
+.rate:hover .face {
+	opacity: 15;
+}
+
+
+</style>
+<script>
+$(function() {
+	
+	$(document).on({
+		mouseover: function(event) {
+			$(this).find('.far').addClass('star-over');
+			$(this).prevAll().find('.far').addClass('star-over');
+		},
+		mouseleave: function(event) {
+			$(this).find('.far').removeClass('star-over');
+			$(this).prevAll().find('.far').removeClass('star-over');
+		}
+	}, '.rate');
+
+
+	$(document).on('click', '.rate', function() {
+		if ( !$(this).find('.star').hasClass('rate-active') ) {
+			$(this).siblings().find('.star').addClass('far').removeClass('fas rate-active');
+			$(this).find('.star').addClass('rate-active fas').removeClass('far star-over');
+			$(this).prevAll().find('.star').addClass('fas').removeClass('far star-over');
+		} else {
+			console.log('has');
+		}
+	});
+	
+});
+
+
+</script>
+
+<br><br><br><br><br>
+<div class="box3">
+<h1 style="text-align:center;font-size:35px;">Library Management System</h1>
+<h1 style="text-align:center;font-size:25px;">Feed Back</h1>
+
+<div class="wrap">
+	<div class="stars">
+		<label class="rate">
+			<input type="radio" name="radio1" id="star1" value="star1">
+			<div class="face"></div>
+			<i class="far fa-star star one-star"></i>
+		</label>
+		<label class="rate">
+			<input type="radio" name="radio1" id="star2" value="star2">
+			<div class="face"></div>
+			<i class="far fa-star star two-star"></i>
+		</label>
+		<label class="rate">
+			<input type="radio" name="radio1" id="star3" value="star3">
+			<div class="face"></div>
+			<i class="far fa-star star three-star"></i>
+		</label>
+		<label class="rate">
+			<input type="radio" name="radio1" id="star4" value="star4">
+			<div class="face"></div>
+			<i class="far fa-star star four-star"></i>
+		</label>
+		<label class="rate">
+			<input type="radio" name="radio1" id="star5" value="star5">
+			<div class="face"></div>
+			<i class="far fa-star star five-star"></i>
+		</label>
+	</div>
+	</div>
+	<form name="feed" action="" method="">
+	<div class="login">
+		
+		<textarea class="form-control"rows="3" cols="10" placeholder="write review" required=""></textarea>
+		<br><br><br><br>
+<input class="btn btn-default" type="submit" name="sub" value="Submit" style="color:black;width:65px;height:30px;align:center;">
+</div>
+</form>
+</div>
+

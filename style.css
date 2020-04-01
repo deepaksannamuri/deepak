@@ -1,0 +1,305 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+.wrapper
+{
+height:960px;
+width:1550px;
+/*background-color:red;*/
+}
+header
+{
+height:153px;
+width:1500px;
+background-color:black;
+padding:10px;
+}
+section 
+{
+height:500px;
+width:1520px;
+
+}
+footer
+{
+height:100px;
+width:1536px;
+background-color:black;
+}
+.logo
+{
+float:left;
+padding-left:20px;
+}
+.logo img
+{
+padding-left:50px;
+}
+li a 
+{
+color:white;
+text-decoration:none;
+}
+/*nav
+{
+float:right;
+word-spacing:30px;
+padding:20px;
+}
+nav li
+{
+display:inline-block;
+line-height:80px;
+}*/
+section .sec_img
+{
+height:500px;
+width:1520px;
+margin-top:0px;
+background-repeat:no-repeat;
+}
+.box
+{
+height:300px;
+width:450px;
+background-color:black;
+margin:70px auto ;
+opacity: .6;
+color:white;
+box-shadow: 1px 1px 4px 1px red;
+}
+
+.log_img
+{
+
+height:700px;
+width:1535px;
+margin-top:0px;
+background-image:url(l18.jpg);
+background-repeat:no-repeat;
+}
+.box1
+{
+height:350px;
+width:400px;
+background-color:black;
+margin:70px auto ;
+opacity: .7;
+color:white;
+padding:20px;
+box-shadow: 1px 1px 4px 1px red;
+}
+form .login
+{
+margin: auto 50px;
+}
+input
+{
+height:25px;
+width:300px;
+}
+
+.reg_img
+{
+height:700px;
+width:1535px;
+margin-top:0px;
+background-image:url(reg12.png);
+background-repeat:no-repeat;
+}
+.box2
+{
+height:580px;
+width:400px;
+background-color:black;
+margin:0px auto ;
+opacity: .7;
+color:white;
+padding:20px;
+box-shadow: 1px 1px 4px 1px red;
+}
+.box3
+{
+height:430px;
+width:400px;
+background-color:black;
+margin:0px auto ;
+opacity: .7;
+color:white;
+padding:20px;
+box-shadow: 1px 1px 4px 1px red;
+}
+
+
+
+
+.side-menu ul {
+  margin-left: 10px;
+  height: 10px;
+}
+.side-menu ul li {
+ 
+  font-weight: bold;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.side-menu ul li:hover {
+  color: red;
+}
+.side-menu ul li ul {
+  display: none;
+  z-index: 10;
+  top: 180px;
+}
+
+.side-menu ul :hover ul {
+  display: block;
+  height: 100px;
+  margin-bottom: 10%;
+  width:200px;
+  text-align:center;
+  
+  
+  position: fixed;
+  background: black;
+  box-shadow: 1px 1px 4px 1px orange;
+}
+
+.fa-book-reader:hover{
+color:blue !important;
+cursor:pointer;
+
+}
+.fa fa-star
+{
+color:yellow !important;
+cursor:pointer;
+}
+.fa-star:hover{
+color:yellow !important;
+font-size: 150%;
+cursor:pointer;
+}
+.top-nav-bar
+{
+  height:195px;
+width:1536px;
+background-color:black;
+padding:10px;  
+}
+.right
+{
+  float:right;
+word-spacing:30px;
+padding:20px;
+display:inline-block;
+line-height:80px;
+
+}
+.slider {
+  width: 80%;
+  padding: 0 10px;
+margin-left:0px;
+}
+@media only screen and (max-width: 980px) {
+  .slider {
+    width: 80%;
+    margin-left: 0;
+  }
+  .carousel-inner {
+    height: 240px;
+  }
+}
