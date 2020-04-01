@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+
+<html>
+        <head>
+                <title> NAUKRI </title>
+
+                <style>
+                        * {
+                                box-sizing: border-box;
+                        }
+
+                        .column {
+                                float: left;
+                                width: 50%;
+                                padding: 5px;
+                                height:100%;
+                        }
+
+                .row::after {
+                        content: "";
+                        clear: both;
+                        display: table;
+                }
+                body {
+                        background-color: #3399ff;
+                        background-repeat: no-repeat;
+                        background-attachment: fixed;
+                        background-position: center;
+                        height: 150%;
+                        margin:0;
+                }
+
+                .navbar {
+                        overflow: hidden;
+                        background-color: blue;
+                }
+                .navbar a {
+                        float: left;
+                        font-size: 16px;
+                        color: white;
+                        text-align: center;
+                        padding: 14px 16px;
+                        text-decoration: none;
+                }
+
+                .navbar1 {
+                        float: right;
+                }
+
+                .navbar a:hover, .dropdown:hover .dropbtn {
+                        background-color: #F2F3F4;
+                        color:black;
+                }
+
+                .sticky {
+                        position: fixed;
+                        top: 0;
+                        width: 100%;
+                }
+
+                .footer {
+                        padding: 5px;
+                        text-align: center;
+                        background: blue;
+                        color: white;
+                }
+
+                .title{
+                        background-image: url("OES.png");
+                        background-repeat: no-repeat;
+                        background-position: center top;
+                        background-size: 1400px 150px;
+                }
+
+                .v{
+                        background-color: #99ccff;
+                        width: 1000px;
+                        background-position: center;
+                        padding: 35px;
+                        margin: 35px 40px 50px 150px;
+                }
+                </style>
+
+
+                <script>
+                window.onscroll = function myFunction();
+                varnavbar = document.getElementById("navbar");
+                var sticky = navbar.offsetTop;
+
+                        function myFunction() {
+                                if (window.pageYOffset>= sticky) {
+                                                navbar.classList.add("sticky");
+                                }
+
+                                 else {
+                                                navbar.classList.remove("sticky");
+                                        }
+                                }
+                </script>
+        </head>
+
+
+
+        <body bgcolor="#99ccff">
+
+                <div class="title">
+                        <br><h1 style="text-align:center;color:black"><font
+face="optima">Online Recruitment </font></h1><br>
+                </div>  <hr>
+
+                <div id="navbar" >
+                        <div class="navbar">
+                                <a href="index.html">Home</a>
+                                <a href="latest.html">Latest News</a>
+                                <a href="contact.html">Contact Us</a>
+                                <a href="about.html">About</a>
+
+                                <div class="navbar1">
+                                        <a href="Userlogin.html">Login / Register</a>
+                                </div>
+                        </div>
+                </div>
+
+                <pre><h2>
+                    "We have a <i>passion</i> for developing practical solutions to everyday problems.
+               The traditional paper based methodology is far too dated in an increasingly competitive climate.
+                       So we are here with an application for making the task easier then exixting..."
+                </h2></pre>
+
+               
+
+                <div class="v">
+                        <div class="row">  
+                         
+                            <div class="column">
+                                   
+                               <p align="center"><h2> Why only us..?</h2>
+                                Are you intrested in an easy , organized way to keep up with applicants that apply for jobs at your buisness?
+                                Do you find it difficult to filter through hunderds of resumes , countless times a week , only to find out that
+                                your productivity level isn't where it should be? If so , your go to destination is us..!
+                                "Online Recruitment"</p>
+                            </div>
+                           
+                            <div class="column">
+                              <img align="right" src="companies.jpg" height="150px" width="300px">
+                            </div>
+                        </div>
+                </div>
+               
+                <div class="v">
+                        <div class="row">  
+                           
+                            <div class="column">
+                              <img align="left" src="applicants.jpg" height="150px" width="300px">
+                            </div>
+                           
+                            <div class="column">
+                                   
+                               <p align="center"><h2> For the Applicants..!</h2>
+                        We are a group of people who facilitate you to apply for jobs through our system by taking a test.If you qualify
+                        in the test you will be refered to recruiters.. .You can have a more streamlined and efficient application process
+                        in this way.</p>
+                            </div>
+                           
+                        </div>
+                </div>
+               
+                <div class="v">
+                        <div class="row">  
+                         
+                            <div class="column">
+                                   
+                               <p align="center"><h2> What we offer..?</h2>
+                 
+                            <ul>
+                                <li> User friendly</li>
+                                <li> Recrutiers can post jobs and other required information</li>
+                                <li> Receive applications from applicants</li>
+                                <li> Conduting tests for applicants</li>
+                                <li> Result generating</li>
+                                <li> Offers a schedule to help with interviewing</li>
+                            </ul></p>
+                            </div>
+                           
+                            <div class="column">
+                              <img align="right" src="offer.jpg" height="150px" width="300px">
+                            </div>
+                        </div>
+                </div>
+               
+                <div class="footer">
+                <p><b>All Rights Reserved @</b><i>Teja</i></p>
+                </div>
+        </body>
+
+</html>
