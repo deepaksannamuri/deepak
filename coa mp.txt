@@ -1,0 +1,32 @@
+data segment
+data ends
+
+stack segment
+stack ends
+
+code segment
+        assume cs:code,ds:data,ss:stack
+
+print_atoz       proc
+    mov dl,\'A\'    
+        mov cx,26       
+
+
+print_loop :
+        call write_char        
+        inc dl                 
+        loop print_loop        
+        mov ah,4ch             
+        int 21h                
+print_atoz      endp           
+
+
+write_char       proc
+        mov ah,2h               
+        int 21h                 
+        ret                     
+write_char     endp
+
+
+code ends
+       end
